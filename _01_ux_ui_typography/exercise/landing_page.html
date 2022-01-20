@@ -21,164 +21,162 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<!--Top Bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: darkblue">
-        <div class="container-fluid">
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-            >
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
-                <!-- Left links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                        <img
-                                src="https://codegym.vn/wp-content/uploads/2021/08/CodeGym-Logo.webp"
-                                height="50"
-                                alt="MDB Logo"
-                                loading="lazy"
-                        />
+<!--TOP BAR-->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: darkblue">
+    <div class="container-fluid">
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarRightAlign">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                    <img src="https://codegym.vn/wp-content/uploads/2021/08/CodeGym-Logo.webp" height="50"/>
+                </a>
+                <li class="nav-item dropdown">
+                    <a
+                            class="nav-link dropdown-toggle text-white"
+                            href="#"
+                            id="navbarDropdown0"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        KHÓA HỌC
                     </a>
-                    <li class="nav-item dropdown">
-                        <a
-                                class="nav-link dropdown-toggle text-white"
-                                href="#"
-                                id="navbarDropdown0"
-                                role="button"
-                                data-mdb-toggle="dropdown"
-                                aria-expanded="false"
-                        >
-                            Khóa học
-                        </a>
-                        <!-- Dropdown menu -->
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Another action</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider"/>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Navbar dropdown -->
-                    <li class="nav-item dropdown">
-                        <a
-                                class="nav-link dropdown-toggle text-white"
-                                href="#"
-                                id="navbarDropdown1"
-                                role="button"
-                                data-mdb-toggle="dropdown"
-                                aria-expanded="false"
-                        >
-                            Trung tâm
-                        </a>
-                        <!-- Dropdown menu -->
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Another action</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider"/>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a
-                                class="nav-link dropdown-toggle text-white"
-                                href="#"
-                                id="navbarDropdown2"
-                                role="button"
-                                data-mdb-toggle="dropdown"
-                                aria-expanded="false"
-                        >
-                            Blog
-                        </a>
-                        <!-- Dropdown menu -->
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Another action</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider"/>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Tin tức</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a
-                                class="nav-link dropdown-toggle text-white"
-                                href="#"
-                                id="navbarDropdown4"
-                                role="button"
-                                data-mdb-toggle="dropdown"
-                                aria-expanded="false"
-                        >
-                            Giới thiệu
-                        </a>
-                        <!-- Dropdown menu -->
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Another action</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider"/>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <a class="search" type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
-                             class="bi bi-search text-white"
-                             viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg>
+                    <!-- Dropdown menu -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">NGƯỜI MỚI BẮT ĐẦU</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">NGƯỜI ĐÃ BIẾT LẬP TRÌNH</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider"/>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">....</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Navbar dropdown -->
+                <li class="nav-item dropdown">
+                    <a
+                            class="nav-link dropdown-toggle text-white"
+                            href="#"
+                            id="navbarDropdown1"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        TRUNG TÂM
                     </a>
-                </form>
-            </div>
+                    <!-- Dropdown menu -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">CODEGYM MON CITY, HÀ NỘI</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">...</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider"/>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">CODEGYM HUẾ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                            class="nav-link dropdown-toggle text-white"
+                            href="#"
+                            id="navbarDropdown2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        BLOG
+                    </a>
+                    <!-- Dropdown menu -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">BÀI VIẾT CHUYÊN MÔN</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">...</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider"/>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">TÀI NGUYÊN LẬP TRÌNH</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">...</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">TIN TỨC</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                            class="nav-link dropdown-toggle text-white"
+                            href="#"
+                            id="navbarDropdown4"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        GIỚI THIỆU
+                    </a>
+                    <!-- Dropdown menu -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider"/>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <a class="search" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
+                         class="bi bi-search text-white"
+                         viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </a>
+            </form>
         </div>
-    </nav>
-<div class="p-5 text-center bg-image"
+    </div>
+</nav>
+<!--HEADER-->
+<div class="p-5 bg-image"
      style="background-image: url('https://media.edunet.vn/Media/News/images/11-2019/CODEGYM-PHP.jpg'); height: 500px;">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-        <div class="d-flex justify-content-center align-items-center h-100  ">
+        <div class="d-flex justify-content-center align-items-center h-100">
             <div class="col-lg-8 offset text-white">
                 <p class="fs-2">TRỞ THÀNH LẬP TRÌNH VIÊN FULL-STACK CHỈ SAU 5 THÁNG</p>
-                <p class="fs-4 ">CodeGym Career là chương trình đào tạo lập trình viên hiện đại, vững tay nghề theo
+                <p class="fs-4">CodeGym Career là chương trình đào tạo lập trình viên hiện đại, vững tay nghề theo
                     mô hình Coding Bootcamp dành cho người bắt đầu từ con số 0, các bạn sinh viên CNTT, sinh viên
                     ngành khác, những người đang làm ngành/nghề khác muốn chuyển hướng theo đuổi nghề lập trình.
                 </p>
@@ -188,10 +186,10 @@
 </div>
 <main class="container-fluid">
     <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
             <div class="row">
-                <p class="fs-3 text-center mt-4">TỔNG QUAN CHƯƠNG TRÌNH</p>
+                <p class="fs-3 text-center mt-4 tex">TỔNG QUAN CHƯƠNG TRÌNH</p>
                 <p class="fs-5">Chương trình CodeGym Career tại CodeGym cung cấp giải pháp đào tạo lập trình viên chuyên
                     nghiệp,
                     huấn luyện thực chiến trong thời gian ngắn, thực hành liên tục và cường độ cao. Học viên sẽ thành
@@ -211,146 +209,167 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 text-center">
-                    <img src="https://img.icons8.com/office/2x/briefcase.png" width="50" height="50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                         class="bi bi-bag-fill text-warning" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                    </svg>
                     <h5 class="card-title">Sự nghiệp bắt đầu ngay từ ngày đầu tiên</h5>
                     <p align="justify">Sự nghiệp trở thành lập trình viên full-stack sẽ bắt đầu ngay từ ngày đầu
                         tiên. Học viên giống như là nhân viên tập sự tại CodeGym, tuân thủ các quy định về kỷ luật
                         và văn hoá của CodeGym. Trong vòng 20 tuần, CodeGym giúp bạn trở thành lập trình viên có
                         đầy đủ các kỹ
                         năng quan trọng để phát triển sự nghiệp lâu dài.</p>
-                    <a href="#" class="btn btn-outline-primary">Xem chi tiết</a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img src="https://img.icons8.com/officel/2x/person-male.png" width="50" height="50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                         class="bi bi-pie-chart-fill text-warning" viewBox="0 0 16 16">
+                        <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5zM8.5.015V7.5h7.485A8.001 8.001 0 0 0 8.5.015z"/>
+                    </svg>
                     <h5 class="card-title">
                         Bạn nhận được tương ứng những gì bạn bỏ ra</h5>
                     <p align="justify">Để đạt được mục tiêu, học viên CodeGym được kỳ vọng dành ít nhất 70h mỗi
                         tuần cho chương trình. Các học viên thành công nhất thường dành tới 90h/tuần. Học viên của
                         CodeGym thường nói rằng, chương trình Coding Bootcamp là điều khó khăn nhất nhưng đáng giá
                         nhất mà họ từng thực hiện.</p>
-                    <a href="#" class="btn btn-outline-primary">Xem chi tiết</a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img src="https://img.icons8.com/external-parzival-1997-flat-parzival-1997/2x/external-technology-digital-transformation-parzival-1997-flat-parzival-1997.png"
-                         width="50" height="50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                         class="bi bi-building text-warning" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                        <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                    </svg>
                     <h5 class="card-title">Trải nghiệm doanh nghiệp</h5>
                     <p align="justify">Chương trình của CodeGym được thiết kế cô đọng và chọn lọc các nội dung
                         thiết yếu, đáp ứng yêu cầu của doanh nghiệp. CodeGym tổ chức thường xuyên các seminar,
                         techtalk với doanh nghiệp và các chuyến tham quan doanh nghiệp dành cho học viên. Cuối mỗi
                         khóa học, các doanh nghiệp sẽ tham gia phiên phỏng vấn để đánh giá năng lực và tuyển dụng
                         học viên.</p>
-                    <a href="#" class="btn btn-outline-primary">Xem chi tiết</a>
                 </div>
-
-            </div>
-
-            <div class="row center-block">
-                <p class="fs-3 text-center mt-4">LỘ TRÌNH HỌC THEO MÔ HÌNH CODING BOOTCAMP</p>
-                <div class="text-center">
-                    <img src="https://i2.wp.com/codegym.vn/wp-content/uploads/2019/11/L%E1%BB%99-tr%C3%ACnh-h%E1%BB%8Dc-t%E1%BA%ADp-49.png?w=1080&ssl=1"
-                         style="width: 60%; height: 1200px">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <p class="fs-3 text-center md-4">KHÓA HỌC</p>
-            <table class="table table-bordered">
-                <tr class="fs-5">
-                    <td>
-                        <div class="card-body">
-                            <img src="https://i1.wp.com/codegym.vn/wp-content/uploads/2018/07/java_stack.png?w=162&ssl=1">
-                        </div>
-                    </td>
-                    <td>
-                        <li>Variables & Data types</li>
-                        <li>Program Flow</li>
-                        <li>Array</li>
-                        <li> Object</li>
-                        <li> JavaScript</li>
-                        <li> Function</li>
-                        <li> Debug</li>
-                        <li> Git Basic</li>
-                        <li> HTML Basic</li>
-                        <li> How to learn</li>
-                        <li> Kanban</li>
-                    </td>
-                    <td>
-                        <li> Java</li>
-                        <li> OOP</li>
-                        <li> Spring MVC</li>
-                        <li> Database</li>
-                        <li> REST</li>
-                        <li> Coding Convention</li>
-                        <li> Linux</li>
-                        <li> UML</li>
-                        <li> Reading Skills</li>
-                        <li> Information Seeking</li>
-                    </td>
-                    <td>
-                        <li>Project</li>
-                        <li>Scrum</li>
-                        <li>Algorithms</li>
-                        <li> Git (team work)</li>
-                        <li> Design Pattern</li>
-                        <li>Refactoring</li>
-                        <li> OOAD</li>
-                        <li>Testing & TDD</li>
-                        <li>Portfolio building</li>
-                        <li>Career Development</li>
-                        <li>Working Skills</li>
-                        <li> Professionalism</li>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <p class="fs-3 text-center">HỆ THỐNG PHẦN MỀM HỖ TRỢ HỌC TẬP</p>
-                <p class="fs-5">
-                    Bạn sẽ có toàn quyền truy cập vào các hệ thống phần mềm hỗ trợ học tập hiện đại của CodeGym,
-                    bao gồm: Hệ thống học trực tuyến, hệ thống quản lý dự án, hệ thống luyện code, hệ thống hồ
-                    sơ năng lực trực tuyến, và bộ tài liệu các khoá học có video hướng dẫn thực hành, bài đọc,
-                    bài thực hành, bài tập, quiz….
-                </p><br>
-
-                <p class="fs-5">
-                    Không chỉ hỗ trợ việc học, hệ thống số còn giúp huấn luyện viên theo – đánh giá năng lưc của
-                    từng học viên để có phương pháp đào tạo phù hợp.
-                </p>
-                <a href="#" class="btn btn-warning text-white">Khám phá</a>
-            </div>
-            <div class="col-sm-6 text-center mb-4">
-                <img src="https://i2.wp.com/codegym.vn/wp-content/uploads/2018/06/he-thong-hoc.png?w=878&ssl=1"
-                     width="60%">
             </div>
             <div class="row">
-                <div class="col-sm-6 text-primary">
-                    <p class="h3 text-center">BẠN ĐÃ SẴN SÀNG</p>
-                    <p class="h1 text-center">Gọi ngay!</p>
-                    <p class="h1 text-center">0246.253.8829</p>
+                <div class="col-sm-4 text-center">
+                    <a href="#" class="btn btn-outline-primary">Xem chi tiết</a>
                 </div>
-                <div class="col-sm-6 text-center">
-                    <form>
-                        <div class="form-outline mb-4">
-                            <input type="text" id="form1Example0" class="form-control"/>
-                            <label class="form-label" for="form1Example0">Name</label>
-                        </div>
-                        <div class="form-outline mb-4">
-                            <input type="email" id="form1Example1" class="form-control"/>
-                            <label class="form-label" for="form1Example1">Email address</label>
-                        </div>
-                        <div class="form-outline mb-4">
-                            <input type="text" id="form1Example2" class="form-control"/>
-                            <label class="form-label" for="form1Example2">Phone</label>
-                        </div>
-                        <div class="float-end">
-                            <button type="submit" class="btn btn-warning btn-block mb-4 btn-lg">Đăng ký</button>
-                        </div>
-                    </form>
+                <div class="col-sm-4 text-center">
+                    <a href="#" class="btn btn-outline-primary">Xem chi tiết</a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a href="#" class="btn btn-outline-primary">Xem chi tiết</a>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <p class="fs-3 text-center md-4">KHÓA HỌC</p>
+                <table class="table table-bordered">
+                    <tr class="fs-5">
+                        <td>
+                            <div class="card-body">
+                                <img src="https://i1.wp.com/codegym.vn/wp-content/uploads/2018/07/java_stack.png?w=162&ssl=1">
+                            </div>
+                        </td>
+                        <td>
+                            <li>Variables & Data types</li>
+                            <li>Program Flow</li>
+                            <li>Array</li>
+                            <li> Object</li>
+                            <li> JavaScript</li>
+                            <li> Function</li>
+                            <li> Debug</li>
+                            <li> Git Basic</li>
+                            <li> HTML Basic</li>
+                            <li> How to learn</li>
+                            <li> Kanban</li>
+                        </td>
+                        <td>
+                            <li> Java</li>
+                            <li> OOP</li>
+                            <li> Spring MVC</li>
+                            <li> Database</li>
+                            <li> REST</li>
+                            <li> Coding Convention</li>
+                            <li> Linux</li>
+                            <li> UML</li>
+                            <li> Reading Skills</li>
+                            <li> Information Seeking</li>
+                        </td>
+                        <td>
+                            <li>Project</li>
+                            <li>Scrum</li>
+                            <li>Algorithms</li>
+                            <li> Git (team work)</li>
+                            <li> Design Pattern</li>
+                            <li>Refactoring</li>
+                            <li> OOAD</li>
+                            <li>Testing & TDD</li>
+                            <li>Portfolio building</li>
+                            <li>Career Development</li>
+                            <li>Working Skills</li>
+                            <li> Professionalism</li>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <p class="fs-4 fw-bold text-center">HỆ THỐNG PHẦN MỀM HỖ TRỢ HỌC TẬP</p>
+                    <p class="fs-5 text-align">
+                        Bạn sẽ có toàn quyền truy cập vào các hệ thống phần mềm hỗ trợ học tập hiện đại của CodeGym,
+                        bao gồm: Hệ thống học trực tuyến, hệ thống quản lý dự án, hệ thống luyện code, hệ thống hồ
+                        sơ năng lực trực tuyến, và bộ tài liệu các khoá học có video hướng dẫn thực hành, bài đọc,
+                        bài thực hành, bài tập, quiz….
+                    </p><br>
+                    <p class="fs-5">
+                        Không chỉ hỗ trợ việc học, hệ thống số còn giúp huấn luyện viên theo – đánh giá năng lưc của
+                        từng học viên để có phương pháp đào tạo phù hợp.
+                    </p>
+                    <div class="float-center">
+                        <div class="col-sm-8 text-center">
+                        <a href="#" class="btn btn-warning text-white text-center">Khám phá</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 text-center mb-4">
+                    <img src="https://i2.wp.com/codegym.vn/wp-content/uploads/2018/06/he-thong-hoc.png?w=878&ssl=1"
+                         width="60%">
+                </div>
+                <div class="row">
+                    <br>
+                </div>
+                <div class="row bg-light">
+                    <div class="col-sm-6 text-success">
+                        <p class="h3 text-center">BẠN ĐÃ SẴN SÀNG</p>
+                        <p class="h1 text-center">Gọi ngay!</p>
+                        <p class="h1 text-center">0246.253.8829</p>
+                    </div>
+                    <div class="col-sm-6 justify-content-center align-items-center">
+                        <p>Đăng ký nhận tài liệu chi tiết về chương trình đào tạo lập trình viên chuyên nghiệp – CodeGym
+                            Career
+                        </p>
+                        <form>
+                            <div class="form-outline mb-4">
+                                <input type="text" id="form1Example0" class="form-control"/>
+                                <label class="form-label" for="form1Example0">Name</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form1Example1" class="form-control"/>
+                                <label class="form-label" for="form1Example1">Email address</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="text" id="form1Example2" class="form-control"/>
+                                <label class="form-label" for="form1Example2">Phone</label>
+                            </div>
+                            <div class="float-end">
+                                <button type="submit" class="btn btn-warning btn-block mb-4 btn-lg">Đăng ký</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 </main>
 <footer class=" text-white text-center text-lg-start" style="background-color: #363844">
     <!-- Grid container -->
@@ -442,19 +461,22 @@
                     </li>
                     <li>
                        <span>
-                           <a href="#" class="text-decoration-none">
-                               <img src="https://img.icons8.com/color/2x/facebook-new.png" width="50">
-                           </a>
+                           <!-- Facebook -->
+                            <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button">
+                            <i class="fab fa-facebook-f"></i>
+                            </a>
                        </span>
                         <span>
-                           <a href="#" class="text-decoration-none">
-                              <img src="https://img.icons8.com/color/2x/linkedin.png" width="50">
+                            <!-- Linkedin -->
+                            <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button">
+                            <i class="fab fa-linkedin-in"></i>
                             </a>
                         </span>
                         <span>
-                           <a href="#" class="text-decoration-none">
-                              <img src="https://img.icons8.com/color/2x/youtube-squared.png" width="50">
-                            </a>
+                          <!-- Youtube -->
+                        <a class="btn btn-primary" style="background-color: #ed302f;" href="#!" role="button">
+                        <i class="fab fa-youtube"></i>
+                        </a>
                         </span>
                     </li>
                 </ul>
