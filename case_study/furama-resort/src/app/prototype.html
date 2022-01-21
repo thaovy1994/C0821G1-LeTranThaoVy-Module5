@@ -9,41 +9,199 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet"/>
+  <style>
+    /*@media (min-width: 768px) {*/
+    /*  .navbar-nav{*/
+    /*    position: absolute;*/
+    /*    left: 50%;*/
+    /*    transform: translatex(-50%);*/
+    /*  }*/
+    /*}*/
+  </style>
 </head>
 <body>
-<!--HEADER-->
-<div class="card text-center container">
+<!--START NAVBAR-->
+<div class="row header">
+<!--  <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--    <div class="container-fluid">-->
+<!--      <button-->
+<!--        class="navbar-toggler"-->
+<!--        type="button"-->
+<!--        data-mdb-toggle="collapse"-->
+<!--        data-mdb-target="#navbarNav"-->
+<!--        aria-controls="navbarNav"-->
+<!--        aria-expanded="false"-->
+<!--        aria-label="Toggle navigation"-->
+<!--      >-->
+<!--        <i class="fas fa-bars"></i>-->
+<!--      </button>-->
+<!--      <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--        <ul class="navbar-nav">-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link active" aria-current="page" href="#">Home</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="#">Features</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="#">Pricing</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link disabled"-->
+<!--            >Disabled</a-->
+<!--            >-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </nav>-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Left</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="//codeply.com">Codeply</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Right</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!--END NAVBAR-->
+<div class="card container">
+  <!--HEADER-->
   <div class="card-header p-5 bg-image"
-       style="background-image: url('https://thuthuatnhanh.com/wp-content/uploads/2021/07/Background-bien-Beach-trong-xanh.jpg'); height: 500px;">
+       style="background-image:
+       url('https://thuthuatnhanh.com/wp-content/uploads/2021/07/Background-bien-Beach-trong-xanh.jpg');
+       height: 300px;">
+    <!--    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">-->
+    <!--      <div class="d-flex justify-content-center align-items-center text-center">-->
+    <!--        <div class="col-lg-8 offset text-white h-100">-->
+    <!--          <p class="fs-1">Loại phòng</p>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
   </div>
+  <!--  BODY-->
   <div class="card-body">
-    <div class="card-group">
+    <div class="card-group row row-cols-1 row-cols-md-3 g-4">
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img
+          src="https://furamavietnam.com/wp-content/uploads/2018/03/%5E224942630D3A5A787C2989A9F5AF4A3E34E6A8CAE8D94FA3D4%5Epimgpsh_fullsize_distr.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title">PHÒNG SUITE HƯỚNG BIỂN</h5>
+          <p class="card-text">Diện Tích Phòng: 85.8 m2</p>
         </div>
       </div>
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Studio-Suite-M.jpg"
+             class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title">PHÒNG STUDIO SUITE HƯỚNG BIỂN</h5>
+          <p class="card-text">Diện Tích Phòng: 40.1 m2
+          </p>
         </div>
       </div>
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img
+          src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Deluxe-double-bed-M.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <h5 class="card-title">PHÒNG DELUXE HƯỚNG BIỂN</h5>
+          <p class="card-text">Diện Tích Phòng: 43.7 m2</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
     </div>
   </div>
+  <!--  ROW 2-->
+  <div class="card-body">
+    <div class="card-group row row-cols-1 row-cols-md-3 g-4">
+      <div class="card">
+        <img
+          src="https://furamavietnam.com/wp-content/uploads/2018/03/%5E224942630D3A5A787C2989A9F5AF4A3E34E6A8CAE8D94FA3D4%5Epimgpsh_fullsize_distr.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PHÒNG SUITE HƯỚNG BIỂN</h5>
+          <p class="card-text">Diện Tích Phòng: 85.8 m2</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Studio-Suite-M.jpg"
+             class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PHÒNG STUDIO SUITE HƯỚNG BIỂN</h5>
+          <p class="card-text">Diện Tích Phòng: 40.1 m2
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Deluxe-double-bed-M.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PHÒNG DELUXE HƯỚNG BIỂN</h5>
+          <p class="card-text">Diện Tích Phòng: 43.7 m2</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  ROW 3-->
+  <div class="card-body">
+    <div class="card-group row row-cols-1 row-cols-md-3 g-4">
+      <div class="card">
+        <img
+          src="https://furamavietnam.com/wp-content/uploads/2018/03/%5E224942630D3A5A787C2989A9F5AF4A3E34E6A8CAE8D94FA3D4%5Epimgpsh_fullsize_distr.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PHÒNG SUITE HƯỚNG BIỂN</h5>
+          <p class="card-text">Diện Tích Phòng: 85.8 m2</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Studio-Suite-M.jpg"
+             class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PHÒNG STUDIO SUITE HƯỚNG BIỂN</h5>
+          <p class="card-text">Diện Tích Phòng: 40.1 m2
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Deluxe-double-bed-M.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PHÒNG DELUXE HƯỚNG BIỂN</h5>
+          <p class="card-text">Diện Tích Phòng: 43.7 m2</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--ROW 4-->
 </div>
 <script
   type="text/javascript"
