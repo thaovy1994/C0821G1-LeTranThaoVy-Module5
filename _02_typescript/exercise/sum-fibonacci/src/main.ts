@@ -1,8 +1,24 @@
-function Fibonacci(n: number):number {
-    if(n ==1 || n ==2){
-        return  1;
+function fibonacci(n : number) {
+    let a = 0;
+    let b = 1;
+    let total = a+b;
+    let sum = 0;
+    for (let i = 1; i <= n; i++){
+        if (i==1){
+            console.log(a);
+            sum+=a;
+        } else if (i==2){
+            console.log(b);
+            sum+=b;
+        } else {
+            console.log(total);
+            sum+=total;
+            a=b;
+            b=total;
+            total=a+b;
+        }
     }
-    return Fibonacci(n-1) + Fibonacci(n-2);
+    console.log("sum of " + n +" fibonacci: "+ sum);
 }
-let number: number = 3;
-console.log(Fibonacci(number));
+
+fibonacci(5);
