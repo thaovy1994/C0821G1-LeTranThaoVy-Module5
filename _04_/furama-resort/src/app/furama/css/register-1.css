@@ -1,0 +1,22 @@
+.signup {
+  background-color: #222535;
+  border-color: black;
+}
+
+.panel-body label {
+  color: blue;
+  font-weight: normal;
+}
+
+.panel-heading {
+  /*background-color: lightblue;*/
+  color: white;
+}
+
+.panel-footer {
+  background-color: #DD8705;
+}
+
+.btn-submit {
+  margin-right: 5px;
+}
