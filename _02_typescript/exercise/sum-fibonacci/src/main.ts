@@ -21,4 +21,4 @@ function fibonacci(n : number) {
     console.log("sum of " + n +" fibonacci: "+ sum);
 }
 
-fibonacci(5);
+fibonacci(10);
