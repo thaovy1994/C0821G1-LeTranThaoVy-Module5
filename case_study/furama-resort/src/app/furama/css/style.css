@@ -8,5 +8,18 @@
 
 .name-heading{
   color: #ffc107;
-  font-family: Segoe UI Emoji;
+  font-family: "Times New Roman";
+}
+
+.name-heading-1{
+  color: orange;
+  font-family: "Times New Roman";
+}
+
+li{
+  margin: 10px 0;
+}
+
+.btn-1{
+  background-color: lightcyan;
 }
