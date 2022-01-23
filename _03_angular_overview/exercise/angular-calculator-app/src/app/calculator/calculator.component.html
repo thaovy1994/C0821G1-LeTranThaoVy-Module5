@@ -1,0 +1,28 @@
+<p>calculator works!</p>
+<form>
+  <table>
+    <tr>
+      <td><label class="visually-hidden">Number One</label></td>
+      <td><input type="text" name="numberOne" [(ngModel)]="numberOne" class="form-control" placeholder="number 1"></td>
+    </tr>
+    <tr>
+      <td><label class="visually-hidden">Calculator</label></td>
+      <td>
+        <select class="form-select" name="cal" [(ngModel)]="cal">
+          <option selected>Choose calculation</option>
+          <option value="+">Addition</option>
+          <option value="-">Subtraction</option>
+          <option value="*">Multiplication</option>
+          <option value="/">Division</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label class="visually-hidden">Number Two</label></td>
+      <td><input type="text" name="numberTwo" [(ngModel)]="numberTwo" class="form-control" placeholder="Number 2"></td>
+    </tr>
+  </table>
+</form>
+<div>
+<!--    <span>{{numberOne}}</span>{{cal}}<span>{{numberTwo}}</span><span>{{result}}</span>-->
+</div>
