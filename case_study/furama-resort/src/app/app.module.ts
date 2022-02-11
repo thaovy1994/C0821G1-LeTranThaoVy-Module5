@@ -12,6 +12,7 @@ import { CustomerCreateComponent } from './customer/customer-create/customer-cre
 import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
 import { CustomerListComponent } from './customer/customer-list/customer-list.component';
 import { LoginRegisterComponent } from './login-register/login-register.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,10 +27,11 @@ import { LoginRegisterComponent } from './login-register/login-register.componen
     CustomerListComponent,
     LoginRegisterComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,6 +1,7 @@
 export class Customer {
   public id: number;
-  public name: string;
+  public firstName: string;
+  public lastName: string;
   public dateOfBirth: string;
   public gender: number;
   public phone: string;
@@ -8,9 +9,10 @@ export class Customer {
   public address: string;
 
 
-  constructor(id: number, name: string, dateOfBirth: string, gender: number, phone: string, email: string, address: string) {
+  constructor(id: number, firstName: string, lastName: string, dateOfBirth: string, gender: number, phone: string, email: string, address: string) {
     this.id = id;
-    this.name = name;
+    this.firstName = firstName;
+    this.lastName = lastName;
     this.dateOfBirth = dateOfBirth;
     this.gender = gender;
     this.phone = phone;

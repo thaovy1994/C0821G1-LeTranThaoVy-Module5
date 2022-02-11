@@ -1,5 +1,5 @@
 <app-create></app-create>
-<a role="button" class="btn btn-large btn-success text-white" [routerLink]="['/create']">Add new</a>
+<a role="button" class="btn btn-large btn-success text-white">Add new</a>
 <table class="table">
   <thead>
   <tr>
@@ -10,17 +10,18 @@
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <th scope="row">1</th>
-    <td>Mark</td>
-    <td>Male</td>
-    <td>7</td>
-  </tr>
-  <tr>
-    <th scope="row">2</th>
-    <td>Lisa</td>
-    <td>Female</td>
-    <td>9</td>
+  <tr *ngFor="let studentObj of studentList; index as i">
+    <th scope="row">{{i + 1}}</th>
+    <td>{{studentObj.name}}</td>
+    <td>
+      <span *ngIf="studentObj.gender == 1;else std">
+        Male
+      </span>
+      <ng-template #std>
+        Female
+      </ng-template>
+    </td>
+    <td>{{studentObj.point}}</td>
   </tr>
   </tbody>
 </table>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Student} from '../student';
 
 @Component({
   selector: 'app-list',
@@ -6,16 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-public student = new Array();
+public studentList = [];
   constructor() { }
 
   ngOnInit(): void {
-    this.student = this.getStudent();
+    this.studentList.push(new Student(1, 'Ng A', 1, 8.5));
+    this.studentList.push(new Student(2, 'Ng B', 0, 8));
   }
 
-  private getStudent() {
-    return [
-      {}
-    ];
-  }
 }
