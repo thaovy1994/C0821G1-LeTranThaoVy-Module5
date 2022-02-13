@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-create',
@@ -6,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create.component.css']
 })
 export class CreateComponent implements OnInit {
+  // id: number;
+  // name: string;
+  // gender: number;
+  // point: number;
 
-  constructor() { }
+  student = {
+    studentId: 1,
+    studentName: 'Ng Van A',
+    gender: 1,
+    studentPoint: 9};
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  onSubmit(createStudentForm: NgForm) {
+    console.log(createStudentForm.value);
+  }
 }

@@ -6,17 +6,21 @@ import { ListComponent } from './list/list.component';
 import { CreateComponent } from './create/create.component';
 import { DetailComponent } from './detail/detail.component';
 import {RouterModule} from '@angular/router';
+import {FormsModule} from '@angular/forms';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     CreateComponent,
-    DetailComponent
+    DetailComponent,
+    EditComponent
   ],
     imports: [
         BrowserModule,
-        RouterModule
+        RouterModule,
+        FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

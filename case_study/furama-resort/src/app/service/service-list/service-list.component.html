@@ -1,87 +1,120 @@
-<h5 class="text-center name-heading fs-1">List of service</h5>
-<!--TABLE-->
-<div class="container mt-5">
-  <table class="table table-bordered">
-    <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-    </tbody>
-  </table>
+<div class="container-fluid px-0" style="height: 100vh">
+  <div class="row mx-0 px-0" style="height: 100%;">
+    <div class="col-2 px-0" style="background-color: #ADDCCF">
+      <div class="list-group rounded border border-success" style="margin-top: 75px">
+        <a href="#" class="list-group-item list-group-item-action">Quản Lý Nhân Viên</a>
+        <a href="#" class="list-group-item list-group-item-action">Quản Lý Khách Hàng</a>
+        <a href="#" class="list-group-item list-group-item-action">Quản Lý Dịch Vụ</a>
+        <a href="#" class="list-group-item list-group-item-action">Quản Lý Hợp Đồng</a>
+      </div>
+    </div>
+    <div class="col-10">
+      <!--      để cho Angular biết đây chứa nội dung động-->
+      <router-outlet></router-outlet>
+      <h5 class="text-center customer-list fs-1" style="margin-top: 80px; color: yellowgreen">Danh Sách Dịch vụ</h5>
+      <!--TABLE-->
+      <td class="text-center text-white">
+        <a role="button" class="btn btn-large btn-light btn-delete bg-success" data-bs-toggle="modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" text-white class="bi bi-person-plus" viewBox="0 0 16 16">
+            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+          </svg>
+          Thêm mới
+        </a>
+      </td>
+      <div class="container mt-5">
+        <table class="table table-bordered">
+          <thead class="text-center">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Date of birth</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Email</th>
+            <th scope="col">Address</th>
+            <th scope="col" colspan="2">Handle</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let customerObj of serviceList;index as i">
+            <th scope="row" class="text-center">{{i+1}}</th>
+            <td>{{customerObj.firstName}}</td>
+            <td>{{customerObj.lastName}}</td>
+            <td>{{customerObj.dateOfBirth}}</td>
+            <td>
+              <span *ngIf="customerObj.gender == 1;else cus">
+                Male
+              </span>
+              <ng-template #cus>
+                Female
+              </ng-template>
+            </td>
+            <td>{{customerObj.phone}}</td>
+            <td>{{customerObj.email}}</td>
+            <td>{{customerObj.address}}</td>
+            <td class="text-center">
+              <a role="button" class="btn btn-large btn-light btn-delete bg-warning" data-bs-toggle="modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen"
+                     viewBox="0 0 16 16">
+                  <path
+                    d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                </svg>
+              </a>
+              <!--        <a href="#" role="button" class="btn btn-large btn-light text-success">Edit</a>-->
+            </td>
+            <td class="text-center">
+              <a role="button" class="btn btn-large btn-light btn-delete bg-danger" data-bs-toggle="modal"
+                 data-bs-target="#deleteModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
+                     viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                  <path fill-rule="evenodd"
+                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                </svg>
+              </a>
+              <!--        <a role="button" class="btn btn-large btn-danger btn-delete" data-bs-toggle="modal"-->
+              <!--           data-bs-target="#deleteModal">Delete</a>-->
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item "><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </div>
-<!--&lt;!&ndash;DELETE MODAL&ndash;&gt;-->
-<!--<div class="modal" tabindex="-1" id="deleteModal">-->
-<!--  <div class="modal-dialog">-->
-<!--    <div class="modal-content">-->
-<!--      <div class="modal-header">-->
-<!--        <h5 class="modal-title">Are you sure to delete</h5>-->
-<!--        &lt;!&ndash;        <h5 class="text-danger modal-title ms-1" id="name-delete"></h5>&ndash;&gt;-->
-<!--        &lt;!&ndash;        <h5 class="modal-title ms-1">from list ?</h5>&ndash;&gt;-->
-<!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-<!--      </div>-->
-<!--      <div class="modal-body">-->
-<!--        &lt;!&ndash;                        <p>Modal body text goes here.</p>&ndash;&gt;-->
-<!--      </div>-->
-<!--      <div class="modal-footer">-->
-<!--        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
-<!--        <a id="link-delete" type="button" class="btn btn-primary" href="">Delete</a>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--PAGEABLE-->
-<!--<nav aria-label="Page navigation example">-->
-<!--  <ul class="pagination justify-content-center">-->
-<!--    <li class="page-item btn bg-info btn-sm">-->
-<!--      <a class="page-link"-->
-<!--         th:if="${employeePage.hasPrevious()}"-->
-<!--         th:href="@{/employee/list-page(page = ${employeePage.number - 1})}">-->
-<!--        Previous-->
-<!--      </a>-->
-<!--    </li>-->
-<!--    <li class="page-item" th:each="pageNo: ${#numbers.sequence(0,employeePage.totalPages - 1)}">-->
-<!--      <a class="page-link" th:href="@{/employee/list-page(page = ${pageNo})}" th:text="${pageNo}"></a>-->
-<!--    </li>-->
-<!--    <li class="page-item btn bg-info btn-sm">-->
-<!--      <a class="page-link"-->
-<!--         th:if="${employeePage.hasNext()}" th:href="@{/employee/list-page(page = ${employeePage.number + 1})}">-->
-<!--        Next-->
-<!--      </a>-->
-<!--    </li>-->
-<!--  </ul>-->
-<!--</nav>-->
-<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item btn bg-info btn-sm">
-      <a class="page-link">Previous</a>
-    </li>
-    <li class="page-item "><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item btn bg-info btn-sm">
-      <a class="page-link" href="#">Next</a>
-    </li>
-  </ul>
-</nav>
+<!--DELETE MODAL-->
+<div class="modal" tabindex="-1" id="deleteModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Are you sure to delete</h5>
+        <!--        <h5 class="text-danger modal-title ms-1" id="name-delete"></h5>-->
+        <!--        <h5 class="modal-title ms-1">from list ?</h5>-->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--                        <p>Modal body text goes here.</p>-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a id="link-delete" type="button" class="btn btn-primary" href="">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>

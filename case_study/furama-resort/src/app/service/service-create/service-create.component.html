@@ -1,59 +1,33 @@
-<h2 class="text-center register">Create new service</h2>
-
-<div class="row content">
-  <div class="container col-md-6 bg-warning">
-    <form class="row g-3">
-      <div class="col-md-6">
-        <label for="inputFirstName" class="form-label">FirstName</label>
-        <input type="email" class="form-control" id="inputFirstName">
-      </div>
-      <div class="col-md-6">
-        <label for="inputLastName" class="form-label">LastName</label>
-        <input type="email" class="form-control" id="inputLastName">
-      </div>
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
-      </div>
-      <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4">
-      </div>
-      <div class="col-6">
-        <label for="inputAddress" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Danang">
-      </div>
-      <div class="col-6">
-        <label for="inputAddress2" class="form-label">Address 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="1st floor">
-      </div>
-      <div class="col-md-4">
-        <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="col-md-4">
-        <label for="inputZip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="inputZip">
-      </div>
-      <div class="col-8">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
+<h2 class="text-center register">Create new customer</h2>
+<form [formGroup]="contactForm">
+  <div class="row content">
+    <div class="container col-md-6 bg-warning">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="serviceName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="serviceName">
+        </div>
+        <div class="col-md-6">
+          <label for="area" class="form-label">Area</label>
+          <input type="text" class="form-control" id="area">
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="price" class="form-label">Price</label>
+            <input type="date" class="form-control" id="price">
+          </div>
+          <div class="col-md-6">
+            <label for="amountPerson" class="form-label">Amount of person</label>
+            <input type="email" class="form-control" id="amountPerson">
+          </div>
+        </div>
+        <div class="col-12 text-center mt-3 mb-3">
+          <button type="submit" class="btn btn-secondary" (click)="createService()">
+            Create
+          </button>
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
-      <div class="col-12 text-center">
-        <button type="submit" class="btn btn-secondary">Create</button>
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-      </div>
-    </form>
+    </div>
   </div>
-</div>
+</form>

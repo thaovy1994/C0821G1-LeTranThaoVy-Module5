@@ -2,25 +2,25 @@
 <div class="container">
   <div class="container col-5">
     <!--    Khai báo 1 biến trong template, Angular sẽ lưu trữ 1 obj là thể hiện của form-->
-    <form #createStudentForm="ngForm" (ngSubmit)="onSubmit(createStudentForm)">
+    <form #editStudentForm ="ngForm" (ngSubmit)="onSubmit(editStudentForm)">
       <div class="mb-3">
         <label for="studentId" class="form-label">Student Id</label>
         <input
-          ngModel
+          [ngModel] =student.studentId
           name="studentId"
           type="text" class="form-control" id="studentId">
       </div>
       <div class="mb-3">
         <label for="nameStudent" class="form-label">Name</label>
         <input
-          ngModel
+          [ngModel] =student.studentName
           name="nameStudent"
           type="text" class="form-control" id="nameStudent">
       </div>
       <div class="mb-3">
         <label for="gender" class="form-label">Gender</label>
         <select
-          ngModel
+          [ngModel] =student.gender
           name="gender"
           id="gender" class="form-select">
           <option selected>Choose...</option>
@@ -31,7 +31,7 @@
       <div class="mb-3">
         <label for="studentPoint" class="form-label">Point</label>
         <input
-          ngModel
+          [ngModel] =student.studentPoint
           name="studentPoint"
           type="password" class="form-control" id="studentPoint">
       </div>
