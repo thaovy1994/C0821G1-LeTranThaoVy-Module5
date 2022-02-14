@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service-list.component.css']
 })
 export class ServiceListComponent implements OnInit {
+  public serviceList = [];
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

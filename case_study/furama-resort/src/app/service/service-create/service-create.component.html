@@ -1,12 +1,16 @@
-<h2 class="text-center register">Create new customer</h2>
-<form [formGroup]="contactForm">
+<h2 class="text-center register">Create new service</h2>
+<form [formGroup]="serviceForm">
   <div class="row content">
     <div class="container col-md-6 bg-warning">
       <div class="row">
         <div class="col-md-6">
           <label for="serviceName" class="form-label">Name</label>
-          <input type="text" class="form-control" id="serviceName">
+          <input type="text" class="form-control" id="serviceName" formControlName="name">
         </div>
+        <p style="color: red"
+        *ngIf="serviceForm.controls.name.hasError('required') && serviceForm.controls.name.dirty">
+          Pls input name!
+        </p>
         <div class="col-md-6">
           <label for="area" class="form-label">Area</label>
           <input type="text" class="form-control" id="area">

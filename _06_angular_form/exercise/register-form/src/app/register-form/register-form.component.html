@@ -1,0 +1,46 @@
+<div class="container col-5">
+  <form (ngSubmit)="registerInformation()" [formGroup]="registerFrom" >
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" formControlName="password">
+    </div>
+    <div class="mb-3">
+      <label for="confirmPassword" class="form-label">Password confirm</label>
+      <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword">
+    </div>
+    <div class="mb-3">
+      <label for="age" class="form-label">Age</label>
+      <input type="password" class="form-control" id="age" formControlName="age">
+    </div>
+    <div class="mb-3">
+      <label for="country" class="form-label">Country</label>
+      <input type="password" class="form-control" id="country" formControlName="country">
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone</label>
+      <input type="password" class="form-control" id="phone" formControlName="phone">
+    </div>
+    <div>
+      Country:
+      <select formControlName="country">
+        <option value="vn">Viet Nam</option>
+        <option value="us">My</option>
+        <option value="en">Anh</option>
+        <option value="jp">Nhat</option>
+        <option value="other">Khac</option>
+      </select>
+    </div>
+    <div >
+      Gender:
+      <input type="radio" formControlName="gender" value="1" >
+      <label>Nam</label>
+      <input type="radio" formControlName="gender" value="0" >
+      <label>Nu</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
