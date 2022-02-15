@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, ParamMap} from '@angular/router';
+import {DomSanitizer} from '@angular/platform-browser';
+import { SongService } from '../service/song.service';
 
 @Component({
   selector: 'app-youtube-playlist',
@@ -6,10 +9,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./youtube-playlist.component.css']
 })
 export class YoutubePlaylistComponent implements OnInit {
+  song: any;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private songService: SongService,
+              private activatedRoute: ActivatedRoute,
+              private domSanitizer: DomSanitizer) {
   }
 
+  ngOnInit(): void {
+    this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+      const id = paramMap.get('id');
+      this.song = this.songService.findSongById(id);
+    });
+  }
+
+  getSrc() {
+    const url = 'https://www.youtube.com/embed/' + this.song.id;
+    return this.domSanitizer.bypassSecurityTrustResourceUrl(url);
+  }
 }
