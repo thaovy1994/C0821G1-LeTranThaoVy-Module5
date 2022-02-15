@@ -7,12 +7,15 @@ import {ServiceCreateComponent} from './service/service-create/service-create.co
 import {ServiceEditComponent} from './service/service-edit/service-edit.component';
 import {ServiceListComponent} from './service/service-list/service-list.component';
 import {TypeOfRoomComponent} from './service/type-of-room/type-of-room.component';
-import {HomeComponent} from './home/home.component';
+import {MainPageComponent} from './main-page/main-page.component';
 import {CustomerCreateComponent} from './customer/customer-create/customer-create.component';
 import {CustomerEditComponent} from './customer/customer-edit/customer-edit.component';
 import {CustomerListComponent} from './customer/customer-list/customer-list.component';
 import {LoginRegisterComponent} from './login-register/login-register.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +24,14 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ServiceEditComponent,
     ServiceListComponent,
     TypeOfRoomComponent,
-    HomeComponent,
+    MainPageComponent,
     CustomerCreateComponent,
     CustomerEditComponent,
     CustomerListComponent,
-    LoginRegisterComponent
+    LoginRegisterComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
