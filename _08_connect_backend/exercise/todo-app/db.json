@@ -1,0 +1,14 @@
+{
+  "todoList": [
+    {
+      "id": 983,
+      "content": "Nguyen Van An",
+      "complete": "2000-06-12"
+    },
+    {
+      "id": 231,
+      "content": "Do Hung Long",
+      "complete": "1999-07-12"
+    }
+  ]
+}

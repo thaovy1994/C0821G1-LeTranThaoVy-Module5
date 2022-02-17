@@ -1,0 +1,52 @@
+<h2 class="text-center register">Create new customer</h2>
+
+<div class="row content">
+  <div class="container col-md-6 bg-warning">
+    <div class="row">
+      <div class="col-md-6">
+        <label for="inputFirstName" class="form-label">FirstName</label>
+        <input type="text" class="form-control" id="inputFirstName" [(ngModel)]="firstName">
+      </div>
+      <div class="col-md-6">
+        <label for="inputLastName" class="form-label">LastName</label>
+        <input type="text" class="form-control" id="inputLastName" [(ngModel)]="lastName">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="dateOfBirth" class="form-label">Date of birth</label>
+        <input type="date" class="form-control" id="dateOfBirth" [(ngModel)]="dateOfBirth">
+      </div>
+      <div class="col-md-6">
+        <label for="gender" class="form-label">Gender</label>
+        <select id="gender" class="form-select" [(ngModel)]="gender">
+          <option selected>Choose...</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" [(ngModel)]="email">
+      </div>
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="number" class="form-control" id="phone" [(ngModel)]="phone">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Danang" [(ngModel)]="address">
+      </div>
+    </div>
+    <div class="col-12 text-center mt-3 mb-3">
+      <button type="submit" class="btn btn-secondary" (click)="createCustomer()">
+        Create
+      </button>
+      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>

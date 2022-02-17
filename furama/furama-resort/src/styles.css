@@ -1,0 +1,25 @@
+.navbar-expand-lg {
+  background-color: #046056;
+}
+
+.footer {
+  background-color: #ADDCCF;
+}
+
+.name-heading{
+  color: #ffc107;
+  font-family: "Times New Roman";
+}
+
+.name-heading-1{
+  color: orange;
+  font-family: "Times New Roman";
+}
+
+li{
+  margin: 10px 0;
+}
+
+.register{
+  padding-top: 100px;
+}
