@@ -17,7 +17,7 @@
       <!--TABLE-->
       <div class="row">
         <div class="col-8">
-          <a routerLink="/create" role="button" class="btn btn-large btn-light btn-delete bg-success text-white"
+          <a routerLink="/create-customer" role="button" class="btn btn-large btn-light btn-delete bg-success text-white"
              data-bs-toggle="modal">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" text-white
                  class="bi bi-person-plus " viewBox="0 0 16 16">
@@ -69,8 +69,8 @@
             <td>{{customerObj.email}}</td>
             <td>{{customerObj.address}}</td>
             <td class="text-center">
-              <a routerLink="/edit" role="button" class="btn btn-large btn-light btn-edit bg-warning"
-                 data-bs-toggle="modal">
+              <a routerLink="/edit-customer" role="button" class="btn btn-large btn-light btn-edit bg-warning"
+                 data-bs-toggle="modal" (click)="edit(customerObj.id)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen"
                      viewBox="0 0 16 16">
                   <path

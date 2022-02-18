@@ -16,8 +16,8 @@ const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'customer-list', component: CustomerListComponent},
-  {path: 'create', component: CustomerCreateComponent},
-  {path: 'edit', component: CustomerEditComponent},
+  {path: 'create-customer', component: CustomerCreateComponent},
+  {path: 'edit-customer/:id', component: CustomerEditComponent},
   {path: 'facility-list', component: FacilityListComponent}
 ];
 

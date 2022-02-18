@@ -42,4 +42,8 @@ export class CustomerListComponent implements OnInit {
         });
       });
   }
+
+  edit(id: any) {
+    
+  }
 }

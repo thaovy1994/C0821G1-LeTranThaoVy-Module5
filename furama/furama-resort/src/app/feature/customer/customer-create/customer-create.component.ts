@@ -21,11 +21,11 @@ export class CustomerCreateComponent implements OnInit {
     id: new FormControl(),
     firstName: new FormControl('', Validators.required),
     lastName: new FormControl('', Validators.required),
-    dateOfBirth: new FormControl(),
+    dateOfBirth: new FormControl('', Validators.required),
     email: new FormControl('', Validators.email),
-    gender: new FormControl(),
+    gender: new FormControl('', Validators.required),
     phone: new FormControl('', Validators.minLength(9)),
-    address: new FormControl()
+    address: new FormControl('', Validators.required)
   });
 
 
