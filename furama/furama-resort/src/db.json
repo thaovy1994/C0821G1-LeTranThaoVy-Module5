@@ -1,16 +1,6 @@
 {
   "customerList": [
     {
-      "id": 123,
-      "firstName": "Thao",
-      "lastName": "Vy",
-      "dateOfBirth": "1994-01-13",
-      "gender": "female",
-      "phone": "0706169114",
-      "email": "letranthaovy1326@gmail.com",
-      "address": "LTT"
-    },
-    {
       "id": 234,
       "firstName": "Ngoc",
       "lastName": "Chien",
@@ -29,6 +19,16 @@
       "phone": "0905234567",
       "email": "quangle@gmail.com",
       "address": "LTV"
+    },
+    {
+      "id": 457,
+      "firstName": "Thao",
+      "lastName": "Vy",
+      "dateOfBirth": "2022-02-18",
+      "email": "letranthaovy1326@gmail.com",
+      "gender": "Female",
+      "phone": 706169114,
+      "address": "dn"
     }
   ]
 }

@@ -5,20 +5,13 @@ import {CustomerCreateComponent} from './feature/customer/customer-create/custom
 import {CustomerEditComponent} from './feature/customer/customer-edit/customer-edit.component';
 import {FacilityListComponent} from './feature/facility/facility-list/facility-list.component';
 import {HomeComponent} from './feature/home/home.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 const routes: Routes = [
   // {
   //   path: 'customer',
-  //   loadChildren: () => import('./feature/customer/customer.module').then(module => module.CustomerModule)
-  // },
-  // {
-  //   path: 'facility',
-  //   loadChildren: () => import('./feature/facility/facility.module').then(module => module.FacilityModule)
-  // },
-  // {
-  //   path: 'contract',
-  //   loadChildren: () => import('./feature/contract/contract.module').then(module => module.ContractModule)
+  //   loadChildren: () => import('./feature/customer/customer.module.js').then(module => module.CustomerModule)
   // }
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},

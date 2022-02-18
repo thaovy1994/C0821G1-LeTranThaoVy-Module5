@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="032b89c5-73a4-4407-9e32-1599b6ce384f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../furama/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../furama/.idea/furama.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../furama/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../furama/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../furama/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../furama/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../furama/furama-resort/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/register-form/register-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/register-form/register-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../furama/furama-resort/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../furama/furama-resort/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../furama/furama-resort/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../furama/furama-resort/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/feature/customer/customer-create/customer-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/feature/customer/customer-create/customer-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/feature/customer/customer-create/customer-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/feature/customer/customer-create/customer-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/feature/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/feature/customer/customer-list/customer-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/feature/customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../furama/furama-resort/src/app/feature/customer/customer-list/customer-list.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +40,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -74,6 +89,9 @@
       <option name="presentableId" value="Default" />
       <updated>1644826134868</updated>
       <workItem from="1644826136021" duration="6017000" />
+      <workItem from="1645140825178" duration="1198000" />
+      <workItem from="1645146991204" duration="1020000" />
+      <workItem from="1645154299844" duration="549000" />
     </task>
     <servers />
   </component>
@@ -84,6 +102,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1645148017069">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645148017069" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1644833154726">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

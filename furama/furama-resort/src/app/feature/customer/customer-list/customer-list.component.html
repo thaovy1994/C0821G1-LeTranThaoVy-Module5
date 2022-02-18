@@ -15,15 +15,27 @@
       <router-outlet></router-outlet>
       <h5 class="text-center customer-list fs-1">Danh Sách Khách Hàng</h5>
       <!--TABLE-->
-      <td class="text-center text-white">
-        <a routerLink="/create" role="button" class="btn btn-large btn-light btn-delete bg-success" data-bs-toggle="modal">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" text-white class="bi bi-person-plus" viewBox="0 0 16 16">
-            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-          </svg>
-          Thêm mới
-        </a>
-      </td>
+      <div class="row">
+        <div class="col-8">
+          <a routerLink="/create" role="button" class="btn btn-large btn-light btn-delete bg-success text-white"
+             data-bs-toggle="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" text-white
+                 class="bi bi-person-plus " viewBox="0 0 16 16">
+              <path
+                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+              <path fill-rule="evenodd"
+                    d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+            Thêm mới
+          </a>
+        </div>
+        <div class="d-flex col-4">
+<!--          <form class="d-flex">-->
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="term">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+<!--          </form>-->
+        </div>
+      </div>
       <div class="container mt-5">
         <table class="table table-bordered">
           <thead class="text-center">
@@ -40,8 +52,8 @@
           </tr>
           </thead>
           <tbody>
-          <tr *ngFor="let customerObj of customers;index as i">
-            <th scope="row" class="text-center">{{i+1}}</th>
+          <tr *ngFor="let customerObj of customers |filter:term |paginate: { itemsPerPage: 2, currentPage: p };index as i">
+            <th scope="row" class="text-center">{{i + 1}}</th>
             <td>{{customerObj.firstName}}</td>
             <td>{{customerObj.lastName}}</td>
             <td>{{customerObj.dateOfBirth}}</td>
@@ -57,7 +69,8 @@
             <td>{{customerObj.email}}</td>
             <td>{{customerObj.address}}</td>
             <td class="text-center">
-              <a routerLink="/edit" role="button" class="btn btn-large btn-light btn-edit bg-warning" data-bs-toggle="modal">
+              <a routerLink="/edit" role="button" class="btn btn-large btn-light btn-edit bg-warning"
+                 data-bs-toggle="modal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen"
                      viewBox="0 0 16 16">
                   <path
@@ -68,7 +81,7 @@
             </td>
             <td class="text-center">
               <a role="button" class="btn btn-large btn-light btn-delete bg-danger" data-bs-toggle="modal"
-                 data-bs-target="#deleteModal">
+                 data-bs-target="#deleteModal" (click)="delete(customerObj.id)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
                      viewBox="0 0 16 16">
                   <path
@@ -84,19 +97,20 @@
           </tbody>
         </table>
       </div>
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item">
-            <a class="page-link">Previous</a>
-          </li>
-          <li class="page-item "><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#">Next</a>
-          </li>
-        </ul>
-      </nav>
+<!--      <nav aria-label="Page navigation example">-->
+<!--        <ul class="pagination justify-content-center">-->
+<!--          <li class="page-item">-->
+<!--            <a class="page-link">Previous</a>-->
+<!--          </li>-->
+<!--          <li class="page-item "><a class="page-link" href="#">1</a></li>-->
+<!--          <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<!--          <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--          <li class="page-item">-->
+<!--            <a class="page-link" href="#">Next</a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </nav>-->
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
     </div>
   </div>
 </div>
@@ -115,7 +129,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a id="link-delete" type="button" class="btn btn-primary" href="">Delete</a>
+        <a id="link-delete" type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="deleteCustomer()">Delete</a>
       </div>
     </div>
   </div>

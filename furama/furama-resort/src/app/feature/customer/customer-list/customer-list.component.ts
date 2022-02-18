@@ -12,7 +12,10 @@ import {Router} from '@angular/router';
 export class CustomerListComponent implements OnInit {
   // public customerList = [];
   customers: Customer[] = [];
+  idDelete: number;
   content = new FormControl();
+  term: any;
+  p: any;
   constructor(private customerService: CustomerService,
               private router: Router) {
     this.customerService.findAll().subscribe(value => {
@@ -27,8 +30,16 @@ export class CustomerListComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  receivedFromCreate(customer: any) {
-    console.log(customer);
-    this.customers.push(customer);
+  delete(id: number) {
+    this.idDelete = id;
+  }
+  deleteCustomer() {
+    this.customerService.deleteCustomer(this.idDelete).subscribe(value => {
+      }, error => {},
+      () => {
+        this.customerService.findAll().subscribe(value => {
+          this.customers = value;
+        });
+      });
   }
 }
