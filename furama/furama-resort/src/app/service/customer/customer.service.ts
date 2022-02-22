@@ -1,15 +1,15 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Customer} from '../../model/customer';
+import {Customer} from '../../model/customer/customer';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerService {
-  API_URL = 'http://localhost:3000/customerList';
+  API_URL = 'http://localhost:8080/customer';
 
-  apiUrl1 = 'http://localhost:3000/';
+  // apiUrl1 = 'http://localhost:3000/';
 
   constructor(private httpClient: HttpClient) {
   }
@@ -19,7 +19,7 @@ export class CustomerService {
   }
 
   findAll(): Observable<Customer[]> {
-    return this.httpClient.get<Customer[]>(this.API_URL);
+    return this.httpClient.get<Customer[]>(this.API_URL + '/all');
   }
 
   createCustomer(customerObj: Customer): Observable<void> {

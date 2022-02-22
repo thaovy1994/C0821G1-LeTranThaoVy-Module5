@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {Customer} from '../../../model/customer';
+import {Customer} from '../../../model/customer/customer';
 import {FormControl} from '@angular/forms';
 import {CustomerService} from '../../../service/customer/customer.service';
 import {Router} from '@angular/router';
 import {CustomertypeService} from '../../../service/customer/customertype.service';
 import {Subscription} from 'rxjs';
-import {CustomerType} from '../../../model/customer-type';
+import {CustomerType} from '../../../model/customer/customer-type';
 
 @Component({
   selector: 'app-customer-list',
@@ -32,12 +32,12 @@ export class CustomerListComponent implements OnInit {
   }
   subscription: Subscription;
   ngOnInit(): void {
-    this.subscription = this.customerTypeService.getAllCustomerType().subscribe(data => {
-        this.customerTypes = data;
-        console.log(this.customerTypes);
-      }
-      , error => {
-      });
+    // this.subscription = this.customerTypeService.getAllCustomerType().subscribe(data => {
+    //     this.customerTypes = data;
+    //     console.log(this.customerTypes);
+    //   }
+    //   , error => {
+    //   });
   }
   delete(id: number) {
     this.idDelete = id;

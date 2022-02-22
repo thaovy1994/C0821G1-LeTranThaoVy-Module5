@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Division} from '../../model/division';
+import {Division} from '../../model/employee/division';
 import {Observable} from 'rxjs';
 
 @Injectable({

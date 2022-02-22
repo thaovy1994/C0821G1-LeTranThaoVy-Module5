@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {Customer} from '../../../model/customer';
+import {Customer} from '../../../model/customer/customer';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {CustomerService} from '../../../service/customer/customer.service';
 import {Router} from '@angular/router';
