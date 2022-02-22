@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {CustomerService} from '../../../service/customer.service';
-import {ActivatedRoute, Router} from '@angular/router';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {CustomerService} from '../../../service/customer/customer.service';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-customer-edit',
@@ -11,12 +11,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 export class CustomerEditComponent implements OnInit {
   idEdit: number;
 
-  constructor(private customerService: CustomerService,
-              private router: Router,
-              private activatedRoute: ActivatedRoute) {
-  }
-
-  registerFrom = new FormGroup({
+  customerFrom = new FormGroup({
     id: new FormControl(),
     firstName: new FormControl('', Validators.required),
     lastName: new FormControl('', Validators.required),
@@ -27,6 +22,52 @@ export class CustomerEditComponent implements OnInit {
     address: new FormControl('', Validators.required)
   });
 
+
+  constructor(private customerService: CustomerService,
+              private router: Router,
+              private activatedRoute: ActivatedRoute,
+              private fb: FormBuilder) {
+    this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+        this.idEdit = +paramMap.get('id');
+        this.getCustomer(this.idEdit);
+
+    });
+
+    // this.activatedRoute.params.subscribe(data => {
+    //   this.idEdit = data.id;
+    //   console.log('hello' +data.id);
+    //   // tslint:disable-next-line:no-shadowed-variable
+    //   this.customerService.findById(this.idEdit).subscribe(data => {
+    //     console.log(data);
+    //     this.customerFrom = this.fb.group({
+    //       id: data.id,
+    //       firstName: data.firstName,
+    //       lastName: data.lastName,
+    //       dateOfBirth: data.dateOfBirth,
+    //       email: data.email,
+    //       gender: data.gender,
+    //       phone: data.phone,
+    //       address: data.address
+    //     });
+    //   });
+    // });
+  }
+
+  public getCustomer(id: number){
+    return this.customerService.findById(id).subscribe(data => {
+      this.customerFrom = this.fb.group({
+              id: data.id,
+              firstName: data.firstName,
+              lastName: data.lastName,
+              dateOfBirth: data.dateOfBirth,
+              email: data.email,
+              gender: data.gender,
+              phone: data.phone,
+              address: data.address
+      });
+    });
+  }
+
   ngOnInit(): void {
   }
 
@@ -34,12 +75,20 @@ export class CustomerEditComponent implements OnInit {
     this.idEdit = id;
   }
 
-  editCustomer() {
-    const customer = Object.assign({}, this.registerFrom.value);
+  editCustomer(id: number) {
+    const customer = Object.assign({}, this.customerFrom.value);
     this.customerService.editCustomer(customer).subscribe(value => {
+      alert('Updated !');
+      console.log('updated');
+      this.router.navigateByUrl('/customer-list');
     }, error => {
     }, () => {
-      this.router.navigateByUrl('/edit-list');
     });
   }
+
+  // updateCustomer(): void {
+  //   const customerUpdate = Object.assign({}, this.customerFrom.value);
+  //   this.customerService.editCustomer(customerUpdate).subscribe();
+  //   this.router.navigateByUrl('customer/list');
+  // }
 }

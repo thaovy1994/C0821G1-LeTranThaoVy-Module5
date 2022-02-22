@@ -1,7 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Customer} from '../../../model/customer';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {CustomerService} from '../../../service/customer.service';
+import {CustomerService} from '../../../service/customer/customer.service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -24,7 +24,7 @@ export class CustomerCreateComponent implements OnInit {
     dateOfBirth: new FormControl('', Validators.required),
     email: new FormControl('', Validators.email),
     gender: new FormControl('', Validators.required),
-    phone: new FormControl('', Validators.minLength(9)),
+    phone: new FormControl('', [Validators.required, Validators.pattern('(((090)|(091))|((84)(90)|(84)(91)))\\d{7}$')]),
     address: new FormControl('', Validators.required)
   });
 

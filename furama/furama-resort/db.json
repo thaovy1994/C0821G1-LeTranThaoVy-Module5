@@ -1,9 +1,68 @@
 {
-  "posts": [
+  "customerList": [
+    {
+      "id": 234,
+      "firstName": "Ngoc",
+      "lastName": "Chien",
+      "dateOfBirth": "1994-11-10",
+      "gender": "female",
+      "phone": "0905123456",
+      "email": "bamlee94@gmail.com",
+      "address": "HS"
+    },
+    {
+      "id": 456,
+      "firstName": "Quang",
+      "lastName": "Lead",
+      "dateOfBirth": "1989-04-21",
+      "gender": "male",
+      "phone": "0905234567",
+      "email": "quangle@gmail.com",
+      "address": "LTV"
+    },
+    {
+      "id": 457,
+      "firstName": "Thao",
+      "lastName": "Vy",
+      "dateOfBirth": "2022-02-18",
+      "email": "letranthaovy1326@gmail.com",
+      "gender": "Female",
+      "phone": 706169114,
+      "address": "dn"
+    },
+    {
+      "id": 458,
+      "firstName": "my",
+      "lastName": "le",
+      "dateOfBirth": "2022-02-21",
+      "email": "apprenticeship@gmail.com",
+      "gender": "Female",
+      "phone": null,
+      "address": "dn"
+    },
+    {
+      "id": 459,
+      "firstName": "my",
+      "lastName": "lead",
+      "dateOfBirth": "2022-02-21",
+      "email": "letranthaovy1326@gmail.com",
+      "gender": "Male",
+      "phone": null,
+      "address": "dn"
+    }
+  ],
+  "customer-type": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Member"
+    },
+    {
+      "id": 2,
+      "name": "Gold"
+    },
+    {
+      "id": 3,
+      "name": "Silver"
     }
   ],
   "comments": [

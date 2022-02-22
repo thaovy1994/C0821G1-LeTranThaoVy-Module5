@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec580cca-5d7d-4ab9-a6e5-6a1248c12f3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/exam/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/feature/list/list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/feature/list/list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/feature/list/list.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/feature/list/list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/model/student.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/service/student.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/app/service/student.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/model/customer-type.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/model/customer-type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/service/customertype.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/service/customertype.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/furama-resort/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-create/customer-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-create/customer-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-create/customer-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-create/customer-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-edit/customer-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-edit/customer-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-list/customer-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/feature/customer/customer-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/furama-resort/src/app/model/customer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/furama/furama-resort/src/app/model/customer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/furama-resort/src/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/furama/furama-resort/src/db.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="25PVxz1Vdr25BC4C1s3J0nSIN5A" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec580cca-5d7d-4ab9-a6e5-6a1248c12f3a" name="Default Changelist" comment="" />
+      <created>1645428958723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645428958723</updated>
+      <workItem from="1645429620966" duration="430000" />
+      <workItem from="1645430640748" duration="129000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/_02_typescript/exercise/sum-fibonacci/src/main.js" />
+        <option value="$PROJECT_DIR$/_02_typescript/practice/typescript-is-prime/src/main.js" />
+        <option value="$PROJECT_DIR$/_02_typescript/practice/typescript-variable/src/main.js" />
+        <option value="$PROJECT_DIR$/_02_typescript/practice/typescript-control-flow-and-loop/src/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1645430752739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645430752739" />
+    <state x="209" y="73" key="new project wizard" timestamp="1645430767674">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1645430767674" />
+  </component>
+</project>

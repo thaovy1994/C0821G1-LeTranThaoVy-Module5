@@ -45,6 +45,7 @@
             <th scope="col">Last Name</th>
             <th scope="col">Date of birth</th>
             <th scope="col">Gender</th>
+            <th>Id</th>
             <th scope="col">Phone</th>
             <th scope="col">Email</th>
             <th scope="col">Address</th>
@@ -52,6 +53,7 @@
           </tr>
           </thead>
           <tbody>
+
           <tr *ngFor="let customerObj of customers |filter:term |paginate: { itemsPerPage: 2, currentPage: p };index as i">
             <th scope="row" class="text-center">{{i + 1}}</th>
             <td>{{customerObj.firstName}}</td>
@@ -65,12 +67,13 @@
                 Female
               </ng-template>
             </td>
+            <td>{{customerObj.id}}</td>
             <td>{{customerObj.phone}}</td>
             <td>{{customerObj.email}}</td>
             <td>{{customerObj.address}}</td>
             <td class="text-center">
-              <a routerLink="/edit-customer" role="button" class="btn btn-large btn-light btn-edit bg-warning"
-                 data-bs-toggle="modal" (click)="edit(customerObj.id)">
+              <a [routerLink]="['/edit-customer',customerObj.id]" role="button" class="btn btn-large btn-light btn-edit bg-warning"
+                 (click)="edit(customerObj.id)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen"
                      viewBox="0 0 16 16">
                   <path

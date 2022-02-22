@@ -51,7 +51,7 @@
           <input type="number" class="form-control" id="phone" formControlName="phone">
         </div>
         <div style="color:red;"
-             *ngIf="registerFrom.controls.phone.hasError('minlength') && registerFrom.controls.phone.dirty"
+             *ngIf="registerFrom.controls.phone.hasError('pattern') && registerFrom.controls.phone.dirty"
         >
           Phone is wrong format.
         </div>

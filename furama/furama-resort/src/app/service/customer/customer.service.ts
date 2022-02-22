@@ -1,13 +1,15 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Customer} from '../model/customer';
+import {Customer} from '../../model/customer';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerService {
   API_URL = 'http://localhost:3000/customerList';
+
+  apiUrl1 = 'http://localhost:3000/';
 
   constructor(private httpClient: HttpClient) {
   }

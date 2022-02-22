@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {Customer} from '../../../model/customer';
 import {FormControl} from '@angular/forms';
-import {CustomerService} from '../../../service/customer.service';
+import {CustomerService} from '../../../service/customer/customer.service';
 import {Router} from '@angular/router';
+import {CustomertypeService} from '../../../service/customer/customertype.service';
+import {Subscription} from 'rxjs';
+import {CustomerType} from '../../../model/customer-type';
 
 @Component({
   selector: 'app-customer-list',
@@ -10,14 +13,15 @@ import {Router} from '@angular/router';
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent implements OnInit {
-  // public customerList = [];
   customers: Customer[] = [];
+  customerTypes: CustomerType[];
   idDelete: number;
   content = new FormControl();
   term: any;
   p: any;
   constructor(private customerService: CustomerService,
-              private router: Router) {
+              private router: Router,
+              private customerTypeService: CustomertypeService) {
     this.customerService.findAll().subscribe(value => {
       this.customers = value;
     }, error => {
@@ -26,9 +30,14 @@ export class CustomerListComponent implements OnInit {
       console.log('complete');
     });
   }
-
+  subscription: Subscription;
   ngOnInit(): void {
-
+    this.subscription = this.customerTypeService.getAllCustomerType().subscribe(data => {
+        this.customerTypes = data;
+        console.log(this.customerTypes);
+      }
+      , error => {
+      });
   }
   delete(id: number) {
     this.idDelete = id;
@@ -44,6 +53,6 @@ export class CustomerListComponent implements OnInit {
   }
 
   edit(id: any) {
-    
+
   }
 }
